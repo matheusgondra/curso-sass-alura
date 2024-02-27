@@ -1,0 +1,4 @@
+@mixin margem-central($width: 80%) {
+	margin: 0 auto;
+	width: $width;
+}
