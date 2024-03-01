@@ -26,9 +26,8 @@ header {
 
 			a {
 				text-decoration: none;
-				color: variaveis.$cor-primaria;
+				@include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
 				font-weight: 500;
-				font-family: variaveis.$ft-textos;
 			}
 		}
 	}
@@ -44,10 +43,8 @@ header {
 			max-width: 464px;
 
 			h1 {
-				font-size: 42px;
-				color: variaveis.$cor-primaria;
 				margin-bottom: 2rem;
-				font-family: variaveis.$ft-titulos;
+				@include mixins.ff-fs-cl(variaveis.$ft-titulos, 42px, variaveis.$cor-primaria);
 
 				span {
 					color: variaveis.$cor-secundaria;
@@ -55,15 +52,13 @@ header {
 			}
 
 			.btn-main {
-				color: #FFFFFF;
 				background-color: variaveis.$cor-secundaria;
 				border-radius: 40px;
 				max-width: 280px;
 				border: none;
 				outline: none;
 				padding: 24px 59.5px;
-				font-size: 22px;
-				font-family: variaveis.$ft-textos;
+				@include mixins.ff-fs-cl(variaveis.$ft-textos, 22px, #FFFFFF);
 				font-weight: 600;
 				line-height: 18px;
 			}
